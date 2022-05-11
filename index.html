@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Geosoftware Übung 03</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="src/style.css">
+
+
+</head>
+<body onload="onLoad()">
+  <script src="src/script.js"></script>
+
+  <div class="a" align="center">
+  <h1>Geosoftware Übung 03 </h1>
+
+  <div>
+  	Course: Geosoftware I SoSe 2022 <br>
+  	Author: Arne Wilberg  <br> <br>
+
+    Diese Seite nimmt einen Standort entgegen und berechnet die Distanz vom Standort zu allen Bushaltestellen. Die Bushaltestellen werden mit aufsteigender Distanz in einer Tabelle dargestellt.
+
+    <hr>
+  </div>
+
+  <div id ="test1">
+    <br>
+    Current position geojson: <br>
+    <textarea rows="2" id="userPosition"></textarea><br>
+    <button id="refreshBtn" class="button" type="button">show bus stops</button>
+    <button id="getLocationBtn" class="button" type="button">get user location</button>
+  </div>
+
+  <br>
+
+  <div id="geoJSON" class="script" align="center">
+  </div>
+  
+  <div id="test2" style="display: none">
+  <br>
+  <table style="width:75%" align="center" id="resultTable">
+    <tr>
+      <th>Coordinates</td>
+      <th>Bus Stop</td>
+      <th>Distance (in meters)</td>
+    </tr>
+  </table>
+  </div>
+
+  </div>
+</body>
+</html>
